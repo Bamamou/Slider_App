@@ -1,0 +1,16 @@
+SwitchhSlider:
+<SwitchhSlider>:
+    cols:3
+
+    Switch:
+        on_active: root.ReadSwitch(self)
+    Slider:
+        max: 200
+        min: 0
+        on_value: root.ReadSlider(self)
+        disabled: not root.SliderEnbaled
+    Label:
+        text: root.Labeltext
+        font_name: "LCD.ttf"
+        font_size: "100dp"
+        color: 0.1, 0.6, 0.8
